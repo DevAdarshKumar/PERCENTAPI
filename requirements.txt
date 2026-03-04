@@ -1,0 +1,8 @@
+
+requests
+fastapi
+uvicorn[standard]
+cloudscraper
+sse-starlette
+zendriver
+pyvirtualdisplay
