@@ -542,7 +542,7 @@ async def fetch_key_via_browser(
         log.exception("Error while attempting to start virtual display")
 
     try:
-        browser = await zd.start(headless=headless)
+        browser = await zd.start(headless=headless ,no_sandbox=True)
     except Exception as exc:
         log.exception("Browser start failed: %s", exc)
         return None
